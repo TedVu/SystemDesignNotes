@@ -30,3 +30,11 @@
   - fully rendered blog articles.
   - activity streams.
   - user <-> friend relationships.
+
+## Part 4 - Asynchronism
+
+- There are two main types of Asynchronism:
+  - Doing tasks in advance and store it in a CDN. This usually applicable for serving static content.
+  - Doing computing-intensive tasks in the background and store it in the message queue, the frontend will notify users once the task is completed.
+- Some major message queue services are: RabbitMQ, Kafka.
+
