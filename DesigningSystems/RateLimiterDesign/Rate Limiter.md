@@ -25,3 +25,5 @@ Final requirement based on analysis:
 - High fault tolerance.
 - Have good exception handling.
 
+## Step 2 - Propose a high level design
+
