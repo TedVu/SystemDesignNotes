@@ -10,3 +10,6 @@ With active-passive, heartbeats are sent between the active and the passive serv
 
 With active-active, both servers manage traffic spreading the load between them. If both servers are public-facing then DNS has to know about both servers, if both servers are internal servers then application logic server has to know about both servers.
 
+## Replication
+
+![img](https://github.com/donnemartin/system-design-primer/raw/master/images/C9ioGtn.png)
