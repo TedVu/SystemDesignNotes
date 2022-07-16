@@ -32,3 +32,40 @@ Two types of requirements
 
 ## Step 2 - Propose a high level design
 
+### Question 1:  Where to put the rate limiter ? 
+
+There are 3 potential areas that we can place a rate limiter at:
+
+- Client side
+- Server side
+- Middleware (this is what will be discussed in detail)
+
+### Question 2: What algorithms should be used to implement the rate limiter ?
+
+Some popular rate limiting algorithms include:
+
+- Token bucket
+- Leaking bucket
+- Sliding window counter
+- Fixed window counter
+- Sliding window log
+
+Each algorithms has its own strength and weaknesses and choosing the most suitable algorithm relies on many factors.
+
+## Step 3 - Design deep dive
+
+See more on the detailed design diagram, overall we should consider these following factors:
+
+- How are rate limiting rules stored and retrieved ? 
+- How should we handle overflow request ?
+- Where should we include the response to user to show that the call is successful or failed ?
+- Discuss operation of the design in a distributed environment, how to handle synchronization and race condition problem.
+- Discuss performance.
+- Discuss monitoring technique.
+
+## Step 4 - Wrap up
+
+We can discuss many other factors such as:
+
+- What level of rate limiting are we implementing ? We only focus on implementing rate limiting at level 7 (Application layer).
+- 
